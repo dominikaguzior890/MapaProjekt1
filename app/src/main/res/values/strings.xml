@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MapaProjekt1</string>
+    <string name="tvLabelLat">Szerokość geo.</string>
+    <string name="tvLat">0.00</string>
+    <string name="tvLabelLon">Długość geo.</string>
+    <string name="tvLon">0.00</string>
+    <string name="tvLabelAlt">Wysokość</string>
+    <string name="tvAlt">0.00</string>
+    <string name="tvLabelAddress">Adres</string>
+    <string name="tvAdress"></string>
+    <string name="swLocationUpdates">Aktualizacja lokalizacji</string>
+    <string name="btnWayPoint">Nowy znacznik</string>
+    <string name="btnWayPointList">Pokaż listę zapisanych miejsc</string>
+    <string name="btnShowMap">Pokaż mapę</string>
+</resources>

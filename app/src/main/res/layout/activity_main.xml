@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvAdress"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="410dp"
+        android:text="@string/tvAdress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLabelLon"
+        android:layout_width="105dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/tvLabelLon"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelAlt"
+        app:layout_constraintEnd_toStartOf="@+id/tvLon"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLon"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/tvLon"
+        app:layout_constraintBottom_toTopOf="@+id/tvAlt"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLabelAlt"
+        android:layout_width="96dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/tvLabelAlt"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelAdress"
+        app:layout_constraintEnd_toStartOf="@+id/tvAlt"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLabelLat"
+        android:layout_width="112dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tvLabelLat"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelLon"
+        app:layout_constraintEnd_toStartOf="@+id/tvLat"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.872" />
+
+    <TextView
+        android:id="@+id/tvLabelAdress"
+        android:layout_width="90dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="461dp"
+        android:text="@string/tvLabelAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvAdress"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAlt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/tvAlt"
+        app:layout_constraintBottom_toTopOf="@+id/tvAdress"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLat"
+        android:layout_width="200dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/tvLat"
+        app:layout_constraintBottom_toTopOf="@+id/tvLon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.835" />
+
+    <Button
+        android:id="@+id/btnNewWayPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/btnWayPoint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAdress" />
+
+    <Button
+        android:id="@+id/btnWayPointList"
+        android:layout_width="154dp"
+        android:layout_height="53dp"
+        android:text="@string/btnWayPointList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNewWayPoint" />
+
+    <Button
+        android:id="@+id/btnShowMap"
+        android:layout_width="154dp"
+        android:layout_height="53dp"
+        android:text="@string/btnShowMap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnWayPointList" />
+</androidx.constraintlayout.widget.ConstraintLayout>
